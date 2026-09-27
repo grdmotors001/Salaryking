@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Salary King - Apply for an individual loan online. Powered by Capital Hind Finance Private Limited.">
+  <title>Salary King | Earn More, Grow More</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#home"><img src="assets/salary-king-logo.png" alt="Salary King"></a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#how">How It Works</a>
+    <a href="#eligibility">Eligibility</a>
+    <a href="#contact">Contact</a>
+    <a class="nav-btn" href="#login">Customer Login</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <span class="eyebrow">DIGITAL LOAN APPLICATION</span>
+    <h1>Your Salary.<br><span>Your Growth.</span></h1>
+    <p>Apply for an individual loan online with a simple, guided application journey.</p>
+    <div class="actions">
+      <a class="btn primary" href="#apply">Apply for a Loan <b>→</b></a>
+      <a class="btn secondary" href="#how">See How It Works</a>
+    </div>
+    <div class="trust"><span>✓</span> Powered by Capital Hind Finance Private Limited</div>
+  </div>
+  <div class="hero-card">
+    <img src="assets/salary-king-logo.png" alt="Salary King logo">
+    <div class="mini-card"><strong>Simple application</strong><span>Submit your details and documents online.</span></div>
+  </div>
+</section>
+
+<section class="stats">
+  <div><strong>01</strong><span>Online application</span></div>
+  <div><strong>02</strong><span>Document verification</span></div>
+  <div><strong>03</strong><span>Credit assessment</span></div>
+  <div><strong>04</strong><span>Disbursement*</span></div>
+</section>
+
+<section id="how" class="section">
+  <div class="section-head"><span class="eyebrow">THE JOURNEY</span><h2>How Salary King works</h2><p>A clear digital journey from application to decision.</p></div>
+  <div class="steps">
+    <article><b>01</b><h3>Apply online</h3><p>Enter your basic personal, employment and loan details.</p></article>
+    <article><b>02</b><h3>Verify details</h3><p>Upload the documents requested for your application.</p></article>
+    <article><b>03</b><h3>Assessment</h3><p>Your application is reviewed as per applicable credit and lending processes.</p></article>
+    <article><b>04</b><h3>Disbursement</h3><p>If approved and all conditions are satisfied, the loan is disbursed.</p></article>
+  </div>
+</section>
+
+<section id="eligibility" class="section pale">
+  <div class="split">
+    <div><span class="eyebrow">CHECK BEFORE APPLYING</span><h2>Eligibility & documents</h2><p>Final eligibility, terms and documentation depend on the applicable product and credit assessment.</p></div>
+    <div class="checklist">
+      <div>✓ Identity & address proof</div>
+      <div>✓ Employment / income information</div>
+      <div>✓ Bank account details</div>
+      <div>✓ Other documents requested during assessment</div>
+    </div>
+  </div>
+</section>
+
+
+<section id="login" class="login-section">
+  <div class="login-card">
+    <div class="login-logo"><img src="assets/salary-king-logo.png" alt="Salary King"></div>
+    <span class="eyebrow">CUSTOMER LOGIN</span>
+    <h2>Welcome to Salary King</h2>
+    <p>Sign in to continue your loan application and check your application status.</p>
+    <button class="google-btn" id="googleLogin" type="button">
+      <span class="google-icon">G</span>
+      <span>Continue with Google</span>
+    </button>
+    <div class="login-divider"><span>or</span></div>
+    <a class="btn primary login-apply" href="#apply">Apply without login →</a>
+    <small>Google sign-in is currently in demo mode. Production OAuth will be connected to the customer authentication system.</small>
+  </div>
+</section>
+
+<section id="apply" class="apply">
+  <div class="apply-copy"><span class="eyebrow">START YOUR APPLICATION</span><h2>Tell us about yourself.</h2><p>This is a front-end application form. Connect it to the Salary King backend/Supabase workflow to submit live applications.</p></div>
+  <form id="loanForm">
+    <label>Full Name<input name="name" required placeholder="Enter your full name"></label>
+    <label>Mobile Number<input name="mobile" required inputmode="numeric" maxlength="10" placeholder="10-digit mobile number"></label>
+    <label>Monthly Salary<input name="salary" required inputmode="numeric" placeholder="₹ Monthly salary"></label>
+    <label>Loan Amount<input name="amount" required inputmode="numeric" placeholder="₹ Required loan amount"></label>
+    <label class="full">Employment Type<select name="employment" required><option value="">Select</option><option>Salaried</option><option>Self-employed</option><option>Other</option></select></label>
+    <button class="btn primary full" type="submit">Continue Application →</button>
+    <p class="form-note" id="formNote">By continuing, you agree that your information may be used for processing your application subject to applicable terms and privacy practices.</p>
+  </form>
+</section>
+
+<section class="cta">
+  <div><span class="eyebrow">SALARY KING</span><h2>Earn More. Grow More.</h2><p>A digital-first customer journey, backed by Capital Hind Finance Private Limited.</p></div>
+  <a class="btn light" href="#apply">Start Application</a>
+</section>
+</main>
+
+<footer id="contact">
+  <div><strong>SALARY KING</strong><p>Earn More, Grow More</p></div>
+  <div><p>Powered by<br><b>CAPITAL HIND FINANCE PRIVATE LIMITED</b></p></div>
+  <div><p>© <span id="year"></span> Salary King. All rights reserved.</p></div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
